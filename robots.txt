@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bragio1.github.io/bragio/sitemap.xml
