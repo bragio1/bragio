@@ -297,6 +297,11 @@
     <!-- ========== NAVBAR ========== -->
     <nav class="navbar">
         <div class="logo"><img src="logo.png" alt="براقيو" style="height: 50px;"></div>
+        <span style="display: inline-flex; align-items: center; gap: 8px; margin-left: 10px; background: #f0f8ff; padding: 4px 10px; border-radius: 20px; border: 1px solid #25D366;">
+    <span id="liveClock" style="font-size: 0.8rem; color: #0d3b66; font-weight: bold;"></span>
+    <span style="color: #25D366;">|</span>
+    <span id="dailyCount" style="font-size: 0.7rem; color: #25D366; font-weight: bold;">🚀 47 خدمة</span>
+</span>
         <div class="mobile-menu" onclick="toggleMenu()">☰</div>
         <ul id="navLinks">
             <li><a href="index.html">الرئيسية</a></li>
@@ -623,31 +628,23 @@
         <span class="tooltip">اتصل الآن</span>
     </a>
 </div>
-<!-- الساعة والعداد في الأسفل على اليمين -->
-<div style="position: fixed; bottom: 30px; right: 15px; z-index: 999; background: #ffffff; border: 2px solid #0d3b66; border-radius: 10px; padding: 8px 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); text-align: center; font-weight: bold; color: #0d3b66; font-size: 0.85rem;">
-    <span id="liveClockFixed"></span>
-    <br>
-    <span id="dailyCountFixed" style="color: #25D366; font-size: 0.7rem;">🚀 47 خدمة</span>
-</div>
-
 <script>
-    // الساعة الثابتة (إنجليزي)
-    function updateFixedClock() {
+    function updateClock() {
         const now = new Date();
         const options = { timeZone: 'Asia/Riyadh', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
-        document.getElementById('liveClockFixed').textContent = '🕐 ' + now.toLocaleTimeString('en-US', options);
+        document.getElementById('liveClock').textContent = '🕐 ' + now.toLocaleTimeString('en-US', options);
     }
-    setInterval(updateFixedClock, 1000);
-    updateFixedClock();
+    setInterval(updateClock, 1000);
+    updateClock();
 
-    // عداد الخدمات (عربي)
-    let dailyFixed = 47;
+    let daily = 47;
     setInterval(() => {
-        dailyFixed += Math.floor(Math.random() * 2) + 1;
-        const el = document.getElementById('dailyCountFixed');
-        if(el) el.textContent = '🚀 ' + dailyFixed + ' خدمة';
+        daily += Math.floor(Math.random() * 2) + 1;
+        const el = document.getElementById('dailyCount');
+        if(el) el.textContent = '🚀 ' + daily + ' خدمة';
     }, 15000);
 </script>
+ 
 
 </body>
 </html>
