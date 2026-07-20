@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>https://bragio1.github.io/bragio/</loc>
-    <priority>1.0</priority>
-  </url>
-
+  <url><loc>https://bragio1.github.io/bragio/</loc><priority>1.0</priority></url>
   <url><loc>https://bragio1.github.io/bragio/تعقيم-المنشآت.html</loc></url>
   <url><loc>https://bragio1.github.io/bragio/تنظيف-الاحياء.html</loc></url>
   <url><loc>https://bragio1.github.io/bragio/تنظيف-الحمامات.html</loc></url>
@@ -45,6 +40,4 @@
   <url><loc>https://bragio1.github.io/bragio/سياسة-الخصوصية.html</loc></url>
   <url><loc>https://bragio1.github.io/bragio/اتصل-بنا.html</loc></url>
   <url><loc>https://bragio1.github.io/bragio/المدونة.html</loc></url>
-  <url><loc>https://bragio1.github.io/bragio/404.html</loc></url>
-
 </urlset>
